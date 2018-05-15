@@ -5,12 +5,13 @@
     <title>learning</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li> <a href="{{site.baseurl}}/index.html">Home</a></li>
-        <li> <a href="{{site.baseurl}}/news.html">News</a></li>
-      </ul>
-    </nav>
+    <header>
+      {% include nav.html %}
+    </header>
     {{content}}
+    <footer>
+      {% include nav.html %}
+    </footer>
   </body>
 </html>
+`

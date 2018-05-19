@@ -3,15 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>learning</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
   </head>
   <body>
-    <header>
-      {% include nav.html %}
-    </header>
-    {{content}}
-    <footer>
-      {% include nav.html %}
-    </footer>
+    <div class="side-nav">
+        <div class="about-me">
+            <h1> <a href="#"> Jeevan's Blog </a></h1>
+            <p>A dlj lnlk sdj kdlfjldkjf jlksdj lkjdlj jk</p>
+        </div>
+        <div id="pages">
+              <h1>Pages</h1>
+              <div class="pages-info">
+                  <p><a href="#">About</a></p>
+                  <p><a href="#">Projects</a></p>
+                  <p> <a href="#">Contact</a></p>
+              </div>
+          </div>
+    </div>
+    <div class="content">
+      {{content}}
+    </div>
   </body>
 </html>
-`

@@ -4,6 +4,10 @@ body {
   font: normal 100%/1.4 Georgia,serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .content{
   margin-left: 30%;
 }
@@ -31,15 +35,21 @@ body {
       background-color: pink;
   }
 
-  #pages{
+  #pages, .pages-info, .recent, .archives, .tags{
     background-color: blue;
     width: 80%;
     margin: auto;
   }
   .pages-info{
-    width: 80%;
-    margin: auto;
     background-color: red;
-    padding: auto;
+  }
+  .recent{
+    background-color: brown;
+  }
+  .archives{
+    background-color: yellow;
+  }
+  .tags{
+    background-color: violet;
   }
 }

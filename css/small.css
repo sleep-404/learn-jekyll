@@ -1,0 +1,23 @@
+@media screen and (max-width: 600px){
+
+  .side-nav,.side-content{
+    display: none;
+  }
+
+  .about-me{
+    display: inline-block;
+    border: solid;
+    width: 98%;
+    margin-bottom: 5%;
+    padding-left: 2%;
+  }
+
+  .content{
+    border: solid;
+    border-color: black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+}

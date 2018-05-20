@@ -25,7 +25,18 @@ a{
     z-index: -1;
     background-color: grey;
     overflow: auto;
+    border: solid black;
   }
+
+.side-content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: solid;
+  border-color: red;
+  width: 29%;
+}
 
   .about-me{
     position: relative;

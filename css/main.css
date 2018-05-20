@@ -14,42 +14,31 @@ a{
 
 @media screen and (min-width: 59.6875em){
   .side-nav{
-    display: block;
+    display: inline-block;
     float: left;
     margin-right: 100%;
     position: fixed;
-    height: 100%;
     width: 29%;
     min-height: 100%;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     background-color: grey;
-    vertical-align: baseline;
+    overflow: auto;
   }
 
   .about-me{
+    position: relative;
       width: 80%;
-      margin: auto;
-      padding-top: 5%;
-      background-color: pink;
+      margin:3% auto;
+      border: solid;
   }
 
   #pages, .pages-info, .recent, .archives, .tags{
-    background-color: blue;
+    position: relative;
+    display: block;
+    border:solid;
     width: 80%;
-    margin: auto;
-  }
-  .pages-info{
-    background-color: red;
-  }
-  .recent{
-    background-color: brown;
-  }
-  .archives{
-    background-color: yellow;
-  }
-  .tags{
-    background-color: violet;
+    margin:3% auto;
   }
 }

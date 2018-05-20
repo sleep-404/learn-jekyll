@@ -29,6 +29,7 @@ a{
   }
 
 .side-content{
+  display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
@@ -39,17 +40,16 @@ a{
 }
 
   .about-me{
-    position: relative;
-      width: 80%;
-      margin:3% auto;
-      border: solid;
+    border:solid;
+    width: 80%;
+    text-align: center;
+    margin: 5% auto;
   }
 
   #pages, .pages-info, .recent, .archives, .tags{
-    position: relative;
-    display: block;
     border:solid;
     width: 80%;
-    margin:3% auto;
+    text-align: center;
+    margin: 5% auto;
   }
 }

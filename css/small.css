@@ -1,8 +1,9 @@
 @media screen and (max-width: 750px){
 
-  .side-nav,.side-content{
+  .side-nav,#side-content{
     display: none;
-  }
+    margin-left: 10%;
+    }
 
   .about-me{
     box-sizing: border-box;
@@ -23,13 +24,10 @@
     margin: 0;
   }
 
-  .drop-down{
+  #drop-down{
     display:inline;
   }
 
-  .drop-down:hover {
-
-  }
   .content{
     box-sizing: border-box;
     border: solid;

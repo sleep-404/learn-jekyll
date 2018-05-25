@@ -21,7 +21,7 @@
     border-color: black;
   }
 
-  .side-content{
+  #side-content{
     box-sizing: border-box;
     position: relative;
     top: 0;
@@ -39,7 +39,7 @@
     width: 29%;
     text-align: center;
   }
-  .drop-down{
+  #drop-down{
     display: none;
     background-color: red;
   }

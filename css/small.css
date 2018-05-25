@@ -1,23 +1,41 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 750px){
 
   .side-nav,.side-content{
     display: none;
   }
 
   .about-me{
-    display: inline-block;
+    box-sizing: border-box;
     border: solid;
-    width: 98%;
+    width: 100%;
     margin-bottom: 5%;
     padding-left: 2%;
+    background-color: gray;
   }
 
+  .small-screen{
+    width: auto;
+    border: solid;
+  }
+  .small-screen h1{
+    display: inline-block;
+    border: solid;
+    margin: 0;
+  }
+
+  .drop-down{
+    display:inline;
+  }
+
+  .drop-down:hover {
+
+  }
   .content{
+    box-sizing: border-box;
     border: solid;
     border-color: black;
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
   }
-
 }

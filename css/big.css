@@ -1,6 +1,6 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 750px){
   .side-nav{
-    display: inline-block;
+    box-sizing: border-box;
     float: left;
     margin-right: 100%;
     position: fixed;
@@ -22,7 +22,7 @@
   }
 
   .side-content{
-    display: inline-block;
+    box-sizing: border-box;
     position: relative;
     top: 0;
     left: 0;
@@ -33,12 +33,16 @@
   }
 
   .about-me{
+    box-sizing: border-box;
     position: relative;
     border:solid;
     width: 29%;
     text-align: center;
   }
-
+  .drop-down{
+    display: none;
+    background-color: red;
+  }
   #pages, .pages-info, .recent, .archives, .tags{
     border:solid;
     width: 80%;

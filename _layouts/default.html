@@ -11,35 +11,39 @@
   <body>
     <div class="side-nav">
     </div>
+
     <div class="about-me">
-        <h1> <a href="#"> Jeevan's Blog </a></h1>
-        <p>A fun lover and programming enthusiasist</p>
+          <div class="small-screen">
+              <h1><a href="#" >Jeevan's Blog </a></h1>
+              <div class="drop-down">
+                  <h1 style="float:right;"><a href="#">Press</a></h1>
+              </div>
+          </div>
+         <p>A fun lover and programming enthusiasist</p>
     </div>
+
     <div class="side-content">
-      <div id="pages">
-            <h1>Pages</h1>
-            <div class="pages-info">
-                <p><a href="#">About</a></p>
-                <p><a href="#">Projects</a></p>
-                <p> <a href="#">Contact</a></p>
-            </div>
+        <div id="pages">
+              <h1>Pages</h1>
+              <div class="pages-info">
+                  <p><a href="#">About</a></p>
+                  <p><a href="#">Projects</a></p>
+                  <p> <a href="#">Contact</a></p>
+              </div>
+          </div>
+        <div class="recent">
+          <h1> <a href="#">Recent posts</a></h1>
         </div>
-
-      <div class="recent">
-        <h1> <a href="#">Recent posts</a></h1>
-      </div>
-
-      <div class="archives">
-        <h1> <a href="#">Archives</a> </h1>
-      </div>
-
-      <div class="tags">
-        <h1> <a href="#">Tags</a> </h1>
-      </div>
-
+        <div class="archives">
+          <h1> <a href="#">Archives</a> </h1>
+        </div>
+        <div class="tags">
+          <h1> <a href="#">Tags</a> </h1>
+        </div>
     </div>
     <div class="content">
       {{content}}
     </div>
+
   </body>
 </html>

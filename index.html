@@ -6,8 +6,10 @@ layout: default
 <p>Hope so</p>
 
   {% for posts in site.posts %}
-  <a href="{{site.baseurl}}{{posts.title}}" style="color:black">
-    <h1>{{posts.title}}</h1>
-    <p>{{posts.meta}}</p>
-  </a>
+    <div id="posts">
+      <a href="{{site.baseurl}}{{posts.title}}" style="color:black">
+        <h1>{{posts.title}}</h1>
+        <p>{{posts.meta}}</p>
+      </a>
+    </div>
   {%endfor%}

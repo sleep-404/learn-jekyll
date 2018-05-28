@@ -14,11 +14,14 @@
     border: solid black;
   }
   .content{
-    margin-left: 30%;
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     border: solid;
     border-color: black;
+    width: 71%;
+    margin-left: 29%;
+    overflow: auto;
   }
 
   #side-content{

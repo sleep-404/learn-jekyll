@@ -1,8 +1,14 @@
 @media screen and (max-width: 750px){
 
-  .side-nav,#side-content{
+  .side-nav{
     display: none;
-    margin-left: 10%;
+      }
+
+    #side-content{
+      display: none;
+      margin-left: 10%;
+      /* border: solid; */
+      /* background-color: gray; */
     }
 
   .about-me{
@@ -35,5 +41,7 @@
     width: 100%;
     margin: auto;
     text-align: center;
+    overflow: auto;
+    background-color: lightblue;
   }
 }

@@ -31,6 +31,7 @@
     box-sizing: border-box;
     position: fixed;
     bottom: 0;
+    /* visibility: hidden; */
     float: left;
     border: solid;
     border-color: red;
@@ -51,30 +52,31 @@
   #drop-down{
     display: none;
   }
-  #pages, .pages-info, .recent, .archives,.resources{
+  #pages, .pages-info, .recent, .archives,.resources,.share,.tags{
     border:solid;
     width: 80%;
     text-align: center;
     margin: 5% auto;
   }
-
-  .tags{
+  .workover{
     border:solid;
     width: 80%;
-    text-align: center;
-    margin: 0% auto;
-  }
-
-  #workover{
-    margin-top: 0;
-    background-color: yellow;
+    z-index: 2;
   }
   #posts{
     box-sizing: border-box;
     border: solid;
     width: 90%;
-    /* margin-top: 10%; */
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .new{
+    position: absolute;
+    bottom:0;
+    float: left;
+    width: 80%;
+    z-index: 2;
+    border:solid;
   }
 }

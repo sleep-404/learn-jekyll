@@ -1,6 +1,9 @@
 console.log('1');
 var count =0;
 
+
+
+
 const press = document.getElementById('drop-down');
 const drop = document.getElementById('side-content');
 var change = function (){
@@ -16,49 +19,22 @@ var change = function (){
 }
 
 var sidenav = document.getElementById('side-content');
-var myElement = document.querySelector("#workover");
+var myElement = document.querySelector("#side-content");
 var position = getPosition(myElement);
 
-var count1=0;
+
+var count1=0,temp=0;
 
 function getPosition(el) {
-  var xPos = 0;
-  var yPos = 0;
-  var heit = screen.height;
-
-
-  while (el) {
-    if (el.tagName == "BODY") {
-      // deal with browser quirks with body/window/document and page scroll
-      var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
-      var yScroll = el.scrollTop || document.documentElement.scrollTop;
-
-      xPos += (el.offsetLeft - xScroll + el.clientLeft);
-      yPos += (el.offsetTop - yScroll + el.clientTop);
-    } else {
-      // for all other non-BODY elements
-      xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-      yPos += (el.offsetTop - el.scrollTop + el.clientTop);
-    }
-
-    el = el.offsetParent;
+  var height = window.innerHeight;;
+  var rect = myElement.getBoundingClientRect();
+  console.log(height);
+  console.log(rect.bottom+':rect.bottom and rect.left:'+rect.left);
+  console.log(rect.top+':rect.top and rect.right:'+rect.right);
+  if(rect.bottom<=height){
+    sidenav.className='after';
+    console.log("I have been executed");
   }
-
-  console.log(yPos+' ypos');
-  console.log(heit+' heit');
-  if(yPos<=heit){
-    // myElement.style.display = 'none';
-    sidenav.className = 'after';
-    console.log(yPos+':yPos and heit:'+heit+'done');
-  }
-  else {
-    sidenav.className = 'before';
-  }
-  return {
-    x: xPos,
-    y: yPos
-  };
-
 }
 
 // deal with the page getting resized or scrolled

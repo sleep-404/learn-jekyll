@@ -47,8 +47,8 @@ function getPosition(el) {
   console.log(yPos+' ypos');
   console.log(heit+' heit');
   if(yPos<=heit){
+    // myElement.style.display = 'none';
     sidenav.className = 'after';
-    myElement.style.visibility = 'hidden';
     console.log(yPos+':yPos and heit:'+heit+'done');
   }
   else {

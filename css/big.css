@@ -51,7 +51,7 @@
   #drop-down{
     display: none;
   }
-  #pages, .pages-info, .recent, .archives{
+  #pages, .pages-info, .recent, .archives,.resources{
     border:solid;
     width: 80%;
     text-align: center;
@@ -67,7 +67,6 @@
 
   #workover{
     margin-top: 0;
-    float: right;
     background-color: yellow;
   }
   #posts{

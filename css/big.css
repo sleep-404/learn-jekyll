@@ -1,18 +1,4 @@
 @media screen and (min-width: 750px){
-  .side-nav{
-    box-sizing: border-box;
-    float: left;
-    margin-right: 100%;
-    position: fixed;
-    width: 29%;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-color: grey;
-    overflow: auto;
-    border: solid black;
-  }
   .content{
     box-sizing: border-box;
     position: absolute;
@@ -24,39 +10,71 @@
     overflow: auto;
   }
 
-  #side-content{
+  #sidebar{
+    position: relative;
+    bottom: 0;
+    float: left;
+    margin-right: -100%;
+    width: 29%;
+    background-color: maroon;
+  }
+
+  .before{
     box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    left: 0;
+    float: left;
+    border: solid;
+    border-color: red;
     width: 100%;
+    background-color: gray;
+  }
+  .after{
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    float: left;
     border: solid;
     border-color: red;
     width: 29%;
+    background-color: gray;
   }
 
   .about-me{
     box-sizing: border-box;
     position: relative;
+    float: left;
     border:solid;
-    width: 29%;
+    width: 100%;
     text-align: center;
+    background-color: brown;
   }
+
   #drop-down{
     display: none;
-    background-color: red;
   }
-  #pages, .pages-info, .recent, .archives, .tags{
+  #pages, .pages-info, .recent, .archives{
     border:solid;
     width: 80%;
     text-align: center;
     margin: 5% auto;
   }
+
+  .tags{
+    border:solid;
+    width: 80%;
+    text-align: center;
+    margin: 0% auto;
+  }
+
+  #workover{
+    margin-top: 0;
+    float: right;
+    background-color: yellow;
+  }
   #posts{
     box-sizing: border-box;
     border: solid;
     width: 90%;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     margin-left: auto;
     margin-right: auto;
   }

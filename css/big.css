@@ -37,6 +37,7 @@
     border-color: red;
     width: 29%;
     background-color: gray;
+    z-index: -1;
   }
 
   .about-me{

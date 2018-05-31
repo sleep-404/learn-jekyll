@@ -1,4 +1,5 @@
 ---
+layout: post
 title: loria ki cambodia
 meta: Yes I did cambodia a lot of times but
 category: Life

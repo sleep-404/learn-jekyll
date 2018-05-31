@@ -1,4 +1,5 @@
 ---
+layout: post
 title: My first post
 meta: This post is gonna be on how I created this website what technologies did I use? and stuff like that
 category: Life

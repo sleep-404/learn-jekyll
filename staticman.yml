@@ -3,12 +3,6 @@ comments:
   branch: "gh-pages"
   commitMessage: "Add Staticman data"
   filename: "entry{@timestamp}"
-  format: "yaml"
-  generatedFields:
-    date:
-      type: date
-      options:
-        format: "timestamp-seconds"
-
+  format: "yml"
   moderation: true
   path: "_data/comments"

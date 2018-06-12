@@ -1,11 +1,11 @@
 comments:
-  allowedFields: ["name", "comment" , "tag" ,"post" ]
+  allowedFields: ["name", "comment" , "tag" ,"posts" ]
   branch: "gh-pages"
   commitMessage: "Add Staticman data"
-  filename: "{fields.post}+{fileds.name}"
+  filename: "{fields.posts}+{fileds.name}"
   format: "yml"
   moderation: true
-  path: "_data/comments/{fields.post}"
+  path: "_data/comments/{fields.posts}"
   generatedFields:
     Name: "{fields.name}" # Simple field (string)
     date: # Extended field (date)

@@ -2,7 +2,7 @@ comments:
   allowedFields: ["name", "comment" , "tag" ,"post" ]
   branch: "gh-pages"
   commitMessage: "Add Staticman data"
-  filename: "{fields.post}+1"
+  filename: "{fields.post}+{fileds.name}"
   format: "yml"
   moderation: true
   path: "_data/comments/{fields.post}"

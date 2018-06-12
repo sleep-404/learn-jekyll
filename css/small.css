@@ -7,13 +7,14 @@
       /* background-color: gray; */
     }
 
-  .about-me{
+  #about-me{
     box-sizing: border-box;
     border: solid;
     width: 100%;
     margin-bottom: 5%;
     padding-left: 2%;
     background-color: gray;
+    position: sticky;
   }
 
   .small-screen{

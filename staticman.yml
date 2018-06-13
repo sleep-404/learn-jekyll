@@ -2,7 +2,7 @@ comments:
   allowedFields: ["name", "comment" , "tag" ,"posts" ]
   branch: "gh-pages"
   commitMessage: "Add Review from {fields.name}"
-  filename: '{@date:YYYY-MM-DD}-{fields.posts}'
+  filename: '{fields.posts}'
   format: "yml"
   moderation: true
   path: "_data/comments/{fields.posts}"

@@ -8,6 +8,7 @@ comments:
   path: "_data/comments/{fields.posts}"
   generatedFields:
     Name: "{fields.name}" # Simple field (string)
+    category: "{@date:YYYY-MM-DD}-{fields.posts}"
     date: # Extended field (date)
       type: date
       options:

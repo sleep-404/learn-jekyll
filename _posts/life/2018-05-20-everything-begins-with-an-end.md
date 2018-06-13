@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Everything begins with an end !
+title: Everything-begins-with-an-end-!
 meta: Yup , that's what I have experienced.
 category: Life
 ---

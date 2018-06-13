@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install Arch
+title: How-to-install-Arch
 meta: In this post I'll try to guide you through the procedure of installtion of Arch linux.
 category: Technology
 ---

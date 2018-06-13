@@ -1,8 +1,8 @@
 comments:
   allowedFields: ["name", "comment" , "tag" , "poster"]
   branch: "gh-pages"
-  commitMessage: "Add {fileds.name}"
-  filename: "Add Staticman {fields.poster}  {fileds.name}"
+  commitMessage: "Add {fields.name}"
+  filename: "Add Staticman {fields.poster}"
   format: "yml"
   moderation: true
   path: "_data/comments"

@@ -7,8 +7,8 @@ comments:
   moderation: true
   path: "_data/comments/{fields.posts}"
   generatedFields:
-    Name: "{fields.name}" # Simple field (string)
-    category: "{fields.posts}"
+    Name: {fields.name} # Simple field (string)
+    category: "-{fields.posts}"
     date: # Extended field (date)
       type: date
       options:

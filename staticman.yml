@@ -1,7 +1,7 @@
 comments:
   allowedFields: ["name", "comment" , "tag" ,"posts" ]
   branch: "gh-pages"
-  commitMessage: "Add Staticman data"
+  commitMessage: "Add Review from {fields.name}"
   filename: '{@date:YYYY-MM-DD}-{fields.posts}'
   format: "yml"
   moderation: true

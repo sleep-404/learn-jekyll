@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation of Arch part2 a.k.a post installation
+title: Installation of Arch part2 aka post installation
 meta: Here I will be sharing stuff you need to take care of after instlling the sexy Arch OS in your computer.
 category: Technology
 ---

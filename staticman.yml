@@ -1,5 +1,5 @@
 comments:
-  allowedFields: ["name", "comment" , "tag" , "poster"]
+  allowedFields: ["name","comment","tag","poster"]
   branch: "gh-pages"
   commitMessage: "Add {fields.name}"
   filename: "Add Staticman {fields.poster}"

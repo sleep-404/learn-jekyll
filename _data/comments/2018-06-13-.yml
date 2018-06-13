@@ -1,0 +1,6 @@
+_id: 11a687b0-6ec1-11e8-a17c-1b86b81d1a23
+name: Will this also work
+comment: lets check again !!
+date: 1528863614
+Name: '{fields.name}'
+category: '{fields.posts}'

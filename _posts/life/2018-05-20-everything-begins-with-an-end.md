@@ -1,13 +1,15 @@
 ---
-layout: post
+tags:
+- name: consectetur adipisicing elit
+  score: 9.0
+- name: sunt
+  score: 1.0
+- name: sed
+  score: 1.0
+- name: reprehenderit
+  score: 1.0
 title: Everything begins with an end !
 meta: Yup , that's what I have experienced.
 category: Life
 ---
-"I have always believed, and I still believe, that whatever good or bad fortune may come our way we can always give it meaning and transform it into something of value."
-- Hermann Hesse, Siddhartha
-
-It is true that optimists, or positive thinkers, are at an advantage in life compared to pessimists. This is because of the effect your mindset and attitude have on everything we come across. Our social relationships, our job and also our health are an integral part of our daily life and we can feel how negative and positive thoughts can have a domino effect on everything we do during the day.
-
-The way we choose to think, positive or negative, has a great impact on the final outcome and is mirrored in everything we do. Hence the importance of having a balanced outlook on life.
-Positive thinking is power for your soul. Whether you are an optimist or a pessimist, these inspiring blogs - awarded by Market Inspector - will take you into a vortex of happiness, positivity, balance, mindfulness and peace. Our awarded bloggers have changed the life of thousands of readers, get the chance to make yours better today!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

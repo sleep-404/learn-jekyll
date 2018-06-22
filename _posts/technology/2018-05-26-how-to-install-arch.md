@@ -1,4 +1,13 @@
 ---
+tags:
+- name: consectetur adipisicing elit
+  score: 9.0
+- name: sunt
+  score: 1.0
+- name: sed
+  score: 1.0
+- name: reprehenderit
+  score: 1.0
 layout: post
 title: How to install Arch
 meta: In this post I'll try to guide you through the procedure of installtion of Arch linux.

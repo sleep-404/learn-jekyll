@@ -35,7 +35,7 @@ for content in contents:
     elif count == 2:
         matter = matter + content
 print(matter)
-r = Rake(min_length=1, max_length=3)
+r = Rake(min_length=1, max_length=2)
 r.extract_keywords_from_text(matter)
 ranked = r.get_ranked_phrases_with_scores()
 print(len(ranked),type(ranked))

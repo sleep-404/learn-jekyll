@@ -1,5 +1,13 @@
 ---
-layout: post
+tags:
+- name: consectetur adipisicing elit
+  score: 9.0
+- name: sunt
+  score: 1.0
+- name: sed
+  score: 1.0
+- name: reprehenderit
+  score: 1.0
 title: Everything begins with an end !
 meta: Yup , that's what I have experienced.
 category: Life

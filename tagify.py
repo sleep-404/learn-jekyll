@@ -2,6 +2,9 @@ import os
 import yaml
 import datetime
 from rake_nltk import Rake
+from bs4 import BeautifulSoup
+from markdown import markdown
+import re
 path = os.path.join(os.getcwd(), '_posts')
 print(path)
 print('Enter the category : ', end='')
@@ -15,13 +18,13 @@ if check == 'yes' :
     x = datetime.datetime.now()
     date = str(x.year)
     if x.month<10:
-        date = date + '-0' + x.month
+        date = date + '-0' + str(x.month)
     else:
-        date = date + '-' + x.month
+        date = date + '-' + str(x.month)
     if x.day < 10:
-        date = date +'-0' + x.day
+        date = date +'-0' + str(x.day)
     else:
-        date = date + '-' + x.day
+        date = date + '-' + str(x.day)
 else:
     print('Enter the date when it was created :', end='')
     date = input()
@@ -34,9 +37,15 @@ for content in contents:
         count += 1
     elif count == 2:
         matter = matter + content
-print(matter)
+html1 = markdown(matter)
+car =  ''.join(BeautifulSoup(html1, "html.parser").findAll(text=True))
+soup = BeautifulSoup(car, 'html.parser')
+car = soup.get_text()
+# print(car)
+car =  re.sub('[^ a-zA-Z0-9-_*.]', ' ', car)
+# print(car)
 r = Rake(min_length=1, max_length=2)
-r.extract_keywords_from_text(matter)
+r.extract_keywords_from_text(car)
 ranked = r.get_ranked_phrases_with_scores()
 print(len(ranked),type(ranked))
 tags='tags:'

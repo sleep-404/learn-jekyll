@@ -1,13 +1,4 @@
 ---
-tags:
-- name: consectetur adipisicing elit
-  score: 9.0
-- name: sunt
-  score: 1.0
-- name: sed
-  score: 1.0
-- name: reprehenderit
-  score: 1.0
 layout: post
 title: My first post
 meta: This post is gonna be on how I created this website what technologies did I use? and stuff like that

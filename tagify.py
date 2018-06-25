@@ -48,14 +48,14 @@ r = Rake(min_length=1, max_length=2)
 r.extract_keywords_from_text(car)
 ranked = r.get_ranked_phrases_with_scores()
 ranked.sort(key=lambda x: x[1])
-for rank in ranked:
-    print(rank[1])
-# tags='tags:'
 # for rank in ranked:
-#     tags = tags+  '\n- name: ' +rank[1]+  '\n'  +  '  score: '   + str(rank[0])
-# tags = tags+'\n'
-# contents.insert(1,tags)
-# post.close()
-# post = open(path+'/'+category+'/'+date+'-'+name,'w');
-# post.writelines(contents)
+#     print(rank[1])
+tags='tags:'
+for rank in ranked:
+    tags = tags+  '\n- name: ' +rank[1]+  '\n'  +  '  score: '   + str(rank[0])
+tags = tags+'\n'
+contents.insert(1,tags)
+post.close()
+post = open(path+'/'+category+'/'+date+'-'+name,'w');
+post.writelines(contents)
 post.close()

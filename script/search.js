@@ -7,8 +7,8 @@ for(i=0;i<posts.length;i++){
   tags.push(posts[i].childNodes[3]);
 }
 // console.log(tags[0].children[0].innerHTML.length);
-
-var query = 's';
+console.log(window.location.search.split('?query=')[1]);
+var query = window.location.search.split('?query=')[1];
 var patt = new RegExp(query,'gim');
 
 
@@ -71,8 +71,7 @@ else {
 }
 
 // console.log(analized);
-
-
+console.log(window.location);
 
 function range(mid,query_1){
   var x=mid,y=mid;

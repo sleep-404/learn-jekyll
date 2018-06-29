@@ -1,5 +1,5 @@
 @media screen and (min-width: 750px){
-  .content{
+  #content{
     box-sizing: border-box;
     position: absolute;
     top: 0;

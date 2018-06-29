@@ -30,7 +30,7 @@
     display:inline;
   }
 
-  .content{
+  #content{
     box-sizing: border-box;
     border: solid;
     border-color: black;

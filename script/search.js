@@ -1,5 +1,5 @@
 var posts = document.getElementsByName('posts'),i;
-// console.log(posts);
+const posts_fix  = posts;
 var tags = [];
 var analized = [];
 var i;
@@ -8,7 +8,7 @@ for(i=0;i<posts.length;i++){
 }
 // console.log(tags[0].children[0].innerHTML.length);
 
-var query = 'test';
+var query = 's';
 var patt = new RegExp(query,'gim');
 
 
@@ -39,26 +39,40 @@ for(k=0;k<posts.length;k++){
       }
     }
   }
-  // console.log(score+' I am the score');
+
   if(score){
     var key = new Key_value(k,score);
     analized.push(key);
     console.log("Yoyo pandua");
   }
+  // console.log(score+' I am the score');
+
 }
 //ended
-var key = new Key_value(10,11);
-analized.push(key);
+var result  = document.getElementById('content');
+if(analized.length){
+  analized.sort(function compare(a,b){
+    return b.score - a.score;
+  });
+  console.log(posts[0]);
+  for(i=0;i<analized.length;i++){
+    result.children[i] = posts[analized[i].index];
+  }
+    console.log(posts[0]);
+  for(i=analized.length;i<posts.length;i++){
+      result.children[i].style.display='none';
+  }
+  // console.log(posts_fix[0]);
+  // result.innerHTML += posts_fix[0];
+}
+
+else {
+  result.innerHTML = 'Sorry, no results found.'
+}
+
+// console.log(analized);
 
 
-analized.sort(function compare(a,b){
-  if (a.score < b.score)
-    return 1;
-  if (a.score > b.score)
-    return -1;
-  return 0;
-});
-console.log(analized);
 
 function range(mid,query_1){
   var x=mid,y=mid;
@@ -95,6 +109,7 @@ function search(query,i,j) {
   }
   return -1;
 }
+
 
 function Key_value(index,score){
   this.index = index;

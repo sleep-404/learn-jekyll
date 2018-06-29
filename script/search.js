@@ -40,10 +40,25 @@ for(k=0;k<posts.length;k++){
     }
   }
   // console.log(score+' I am the score');
-
+  if(score){
+    var key = new Key_value(k,score);
+    analized.push(key);
+    console.log("Yoyo pandua");
+  }
 }
 //ended
+var key = new Key_value(10,11);
+analized.push(key);
 
+
+analized.sort(function compare(a,b){
+  if (a.score < b.score)
+    return 1;
+  if (a.score > b.score)
+    return -1;
+  return 0;
+});
+console.log(analized);
 
 function range(mid,query_1){
   var x=mid,y=mid;

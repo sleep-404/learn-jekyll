@@ -1,5 +1,5 @@
 var posts = document.getElementsByName('posts'),i;
-const posts_fix  = posts;
+// console.log(posts);
 var tags = [];
 var analized = [];
 var i;
@@ -7,8 +7,9 @@ for(i=0;i<posts.length;i++){
   tags.push(posts[i].childNodes[3]);
 }
 // console.log(tags[0].children[0].innerHTML.length);
-console.log(window.location.search.split('?query=')[1]);
-var query = window.location.search.split('?query=')[1];
+// console.log(window.location.search.split('?query=')[1]);
+// var query = window.location.search.split('?query=')[1];
+var query = 'as'
 var patt = new RegExp(query,'gim');
 
 
@@ -39,14 +40,12 @@ for(k=0;k<posts.length;k++){
       }
     }
   }
-
+  // console.log(score+' I am the score');
   if(score){
     var key = new Key_value(k,score);
     analized.push(key);
     console.log("Yoyo pandua");
   }
-  // console.log(score+' I am the score');
-
 }
 //ended
 var result  = document.getElementById('content');
@@ -108,7 +107,6 @@ function search(query,i,j) {
   }
   return -1;
 }
-
 
 function Key_value(index,score){
   this.index = index;

@@ -52,7 +52,7 @@
   #drop-down{
     display: none;
   }
-  #pages, .pages-info, .recent, .archives,.resources,.share,.tags{
+  #pages, #search,.pages-info, .recent, .archives,.resources,.share,.tags{
     border:solid;
     width: 80%;
     text-align: center;

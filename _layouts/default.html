@@ -10,7 +10,6 @@
   </head>
   <body>
     <div id="sidebar" class="sidebar" >
-
           <div id="about-me" class="about-me" >
                 <div class="small-screen">
                     <h1><a href="{{site.baseurl}}/" >Jeevan's Blog </a></h1>
@@ -22,6 +21,13 @@
           </div>
 
           <div id="side-content" class="before" >
+
+              <div class="search" id="search">
+                <form action="/search/" id='search-form'>
+                      <input id="search-box" type="text" name="query" placeholder="Search..">
+                  </form>
+              </div>
+              
               <div id="pages">
                     <h1>Pages</h1>
                     <div class="pages-info">

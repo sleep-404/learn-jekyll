@@ -47,14 +47,11 @@ for(k=0;k<posts.length;k++){
   if(score){
     var key = new Key_value(k,score);
     analized.push(key);
-    posts[k].score = score;
-    console.log(posts[k].score+' This has been added ');
-  }
-  else {
-    posts[k].score = 0;
   }
 }
 //ended
+
+
 var result  = document.getElementById('content');
 
 
@@ -69,11 +66,15 @@ if(analized.length){
     // console.log(typeof(b.score));
     return b.score - a.score;
   });
-console.log(result);
+  console.log(analized.length);
+  // console.log(result);
+  var temp = [];
   for(i=0;i<analized.length;i++){
-    result.children[i].innerHTML = posts[analized[i].index].innerHTML;
-    // console.log(posts[analized[i].index]);
-    // console.log(result.children[i]);
+    temp.push(posts[analized[i].index].innerHTML);
+  }
+  console.log(temp.length);
+  for(i=0;i<analized.length;i++){
+    result.children[i].innerHTML = temp[i];
   }
 // console.log(result);
 

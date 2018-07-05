@@ -4,5 +4,5 @@ comments:
   commitMessage: "{fields.name}'s comment'"
   filename: "{@date:YYYY-MM-DD}-{fields.name}"
   format: "yml"
-  moderation: true
+  moderation: false
   path: "_data/comments/{fields.category}"

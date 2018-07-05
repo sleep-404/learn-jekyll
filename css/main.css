@@ -12,3 +12,12 @@ a{
   background-color: lightpink;
   text-align: center;
 }
+
+#comments {
+  border: solid;
+  margin: 3%;
+}
+.functions{
+  border:solid;
+  margin: 1%;
+}

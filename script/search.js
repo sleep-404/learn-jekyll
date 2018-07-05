@@ -6,11 +6,13 @@ var i;
 for(i=0;i<posts.length;i++){
   tags.push(posts[i].childNodes[3]);
 }
+
 // console.log(tags[0].children[0].innerHTML.length);
 // console.log(window.location.search.split('?query=')[1]);
 var query = window.location.search.split('?query=')[1];
 // var query = 'as'
 var patt = new RegExp(query,'gim');
+console.log(patt);
 
 
 //Started
@@ -32,8 +34,8 @@ for(k=0;k<posts.length;k++){
   if(mid!=-1){
     // console.log(mid+' mid ');
     // console.log(tags[k].children[mid].innerHTML)
-    first = range(mid,query[0],k,j)[0];
-    last = range(mid,query[0],k,j)[1];
+    first = range(mid,query[0].toLowerCase(),k,j)[0];
+    last = range(mid,query[0].toLowerCase(),k,j)[1];
     // console.log(first+' :first ; last: '+last);
     var title;
     for(i=first;i<last;i=i+2){
@@ -112,11 +114,11 @@ function search(query,i,j,k) {
   }
   while(i<=j){
     // console.log( i + ' = low ;' + mid + ' = mid ;'  + j + ' = high;');
-    if(tags[k].children[mid].innerHTML[0].localeCompare(query[0])==0){
+    if(tags[k].children[mid].innerHTML[0].localeCompare(query[0].toLowerCase())==0){
       // console.log(tags[k].children[mid].innerHTML + ' From search and k is : ' + k);
       return mid;
     }
-    else if(tags[k].children[mid].innerHTML[0].localeCompare(query[0])==1){
+    else if(tags[k].children[mid].innerHTML[0].localeCompare(query[0].toLowerCase())==1){
       j = mid-2;
     }
     else {

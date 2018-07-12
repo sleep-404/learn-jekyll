@@ -10,6 +10,21 @@
     overflow: auto;
   }
 
+  #search-box{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    padding: 6px 5px 5px 29px;
+    font-size: 1.2em;
+    border: none;
+    color: #555;
+    background-color: #333 !important;
+  }
+  input[type=text]:focus {
+    outline: none;
+}
+
   #sidebar{
     position: relative;
     bottom: 0;
@@ -52,11 +67,12 @@
   #drop-down{
     display: none;
   }
-  #pages, #search,.pages-info, .recent, .archives,.resources,.share,.tags{
+  #pages,.search,.pages-info, .recent, .archives,.resources,.share,.tags{
     border:solid;
     width: 80%;
     text-align: center;
     margin: 5% auto;
+    border-radius: 50px;
   }
   #posts{
     box-sizing: border-box;
@@ -65,6 +81,7 @@
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
   }
 
   #comment_form input, #comment_form textarea {

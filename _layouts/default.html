@@ -21,36 +21,45 @@
           </div>
 
           <div id="side-content" class="before" >
-
-              <div class="search" id="search">
-                <form action="{{site.baseurl}}/search/" id='search-form'>
-                      <input id="search-box" type="text" name="query" placeholder="Search..">
-                  </form>
-              </div>
+            <div id="search" class="search">
+              <form action="{{site.baseurl}}/search/" id='search-form'>
+                <input id="search-box" type="text" name="query" placeholder="Search..">
+              </form>
+            </div>
 
               <div id="pages">
                     <h1>Pages</h1>
-                    <div class="pages-info">
-                        <p><a href="{{site.baseurl}}/about">About</a></p>
-                        <p><a href="#">Projects</a></p>
-                        <p> <a href="#">Contact</a></p>
+                      <div class="pages-info">
+                          <a href="{{site.baseurl}}/about"><p>About</p></a>
+                          <a href="{{site.baseurl}}/projects"><p>Projects</p></a>
+                          <a href="{{site.baseurl}}/contact"><p>Contact</p></a>
+                      </div>
+                  </div>
+                  <a href="#">
+                    <div class="recent">
+                      <h1> Recent comments</h1>
                     </div>
-                </div>
-              <div class="recent">
-                <h1> <a href="#">Recent comments</a></h1>
-              </div>
-              <div class="tags" id="tags">
-                <h1> <a href="#">Tags</a> </h1>
-              </div>
-              <div class="resources" id="resources">
-                  <h1><a href="#">Resources</a></h1>
-              </div>
-              <div class="share" id="share">
-                <h1> <a href="#">Share Auto</a> </h1>
-              </div>
-              <div class="archives">
-                <h1> <a href="#">Archives</a> </h1>
-              </div>
+                  </a>
+                <a href="#">
+                  <div class="tags" id="tags">
+                     <h1>Tags </h1>
+                  </div>
+                </a>
+                <a href="{{site.baseurl}}/resources">
+                  <div class="resources" id="resources">
+                      <h1>Resources</h1>
+                  </div>
+                </a>
+                <a href="{{site.baseurl}}/shareauto">
+                  <div class="share" id="share">
+                     <h1>Share Auto</h1>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="archives">
+                     <h1>Archives</h1>
+                  </div>
+                </a>
           </div>
     </div>
     <div id="content">

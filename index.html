@@ -8,13 +8,13 @@ layout: default
 {% for posts in paginator.posts  %}
     <div id="posts">
         <div class="post-tp">
-            <a href="{{site.baseurl}}{{posts.url}}" style="color:black">
+            <a href="{{site.baseurl}}{{posts.url}}">
               <h1>{{posts.title}}</h1>
               <p>{{posts.meta}}</p>
             </a>
         </div>
-        <div class="post-info" style="border-top:solid">
-          <a style="border:solid;margin-left:0;" href="{{site.baseurl}}/tags/{{posts.category}}/"><span>{{posts.category}}</span></a>
+        <div class="post-info" style="border-top:solid;color:black;">
+          <a style="float:left;" href="{{site.baseurl}}/tags/{{posts.category}}/"><span>{{posts.category}}</span></a>
           <span style="float:right;">{{posts.date}}</span>
         </div>
     </div>

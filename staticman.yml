@@ -4,5 +4,10 @@ comments:
   commitMessage: "{fields.name}'s comment'"
   filename: "{@date:YYYY-MM-DD}-{fields.name}"
   format: "yml"
+  generatedFields:
+    date: # Extended field (date)
+    type: date
+    options:
+      format: "timestamp-seconds"
   moderation: false
   path: "_data/comments/{fields.category}"

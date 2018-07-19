@@ -39,8 +39,6 @@
     background-color: lightblue;
   }
   #posts{
-    box-sizing: border-box;
-    border: solid;
     margin-top: 4%;
   }
   .pages-info{

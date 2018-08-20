@@ -9,5 +9,5 @@ comments:
     type: date
     options:
       format: "timestamp-seconds"
-  moderation: false
+  moderation: true
   path: "_data/comments/{fields.category}"

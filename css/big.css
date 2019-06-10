@@ -8,6 +8,7 @@
     width: 71%;
     margin-left: 29%;
     overflow: auto;
+    font-size: 125%;
   }
 
   #search-box{
@@ -85,6 +86,7 @@
     margin-right: auto;
     overflow: hidden;
     border-color: black;
+    font-size: 125%;
   }
 
   #comment_form input, #comment_form textarea {
